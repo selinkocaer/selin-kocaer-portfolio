@@ -8,7 +8,7 @@
     min-height: 500px;
 
     .hero {
-        max-width: 200px;
+        max-width: 220px;
     }
     span {
         display: flex;
@@ -52,10 +52,10 @@
 }
 
 .colorModeContainer {
-    position: relative;
+    position: relative !important;
 }
 .colorMode {
-    position: absolute;
+    position: absolute !important;
     right: 0;
     width: 25px;
 }
@@ -65,12 +65,12 @@
 }
 
 .description {
-    max-width: 24chö;
+    max-width: 24ch !important;
 }
 
 .info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    gap: 20px !important;
 }

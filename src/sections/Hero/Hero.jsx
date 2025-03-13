@@ -27,7 +27,6 @@ function Hero() {
                 <img className={styles.hero} src={heroImg} alt="Profile picture of Selin Kocaer" />
                 <img className={styles.colorMode} src={themeIcon} alt="Color mode icon" onClick={toggleTheme} />
             </div>
-            {/* HATA BURADAYDI: div'i self-closing yerine açık kapalı hale getirdik */}
             <div className={styles.info}>
                 <h1>
                     Selin <br /> KOCAER
@@ -44,14 +43,13 @@ function Hero() {
                         <img src={LinkedinIcon} alt="Linkedin icon" />
                     </a>
                 </span>
-                <p className={styles.description}> With a passion for developing modern React web apps for commercial businesses.</p>
+                <p className={styles.description}> With experience in both frontend and backend development, I focus on creating efficient, scalable, and user-friendly applications.</p>
                 <a href={CV}>
                     <button className="hover" download>
                         Resume
                     </button>
                 </a>
-            </div>{" "}
-            {/* Buradaki div hatalı kapanmıştı, şimdi düzeldi */}
+            </div>
         </section>
     );
 }

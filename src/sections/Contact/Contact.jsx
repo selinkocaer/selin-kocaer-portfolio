@@ -1,9 +1,10 @@
 import styles from "./ContactStyles.module.css";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 function Contact() {
     const form = useRef();
+    const [message, setMessage] = useState(""); // ✅ useState kullanımı
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -22,9 +23,11 @@ function Contact() {
                 }
             );
     };
+
     return (
         <section id="contact" className={styles.container}>
             <h1 className="sectionTitle">Contact</h1>
+            {message && <p className="message">{message}</p>} {/* ✅ Mesaj ekranda gösterilecek */}
             <form ref={form} onSubmit={sendEmail} action="">
                 <div className="formGroup">
                     <label htmlFor="name" hidden>

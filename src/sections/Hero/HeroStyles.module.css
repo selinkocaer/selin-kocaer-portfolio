@@ -8,7 +8,7 @@
     min-height: 500px;
 
     .hero {
-        max-width: 220px;
+        max-width: 200px;
     }
     span {
         display: flex;
@@ -52,10 +52,10 @@
 }
 
 .colorModeContainer {
-    position: relative !important;
+    position: relative;
 }
 .colorMode {
-    position: absolute !important;
+    position: absolute;
     right: 0;
     width: 25px;
 }
@@ -65,12 +65,34 @@
 }
 
 .description {
-    max-width: 24ch !important;
+    max-width: 24ch;
+    align-self: center;
 }
 
 .info {
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    gap: 20px !important;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: 20px;
+}
+
+@media (width>= 800px) {
+    .container {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .hero {
+            max-width: 350px;
+            width: 350px;
+        }
+    }
+}
+@media (width>= 1400px) {
+    .container {
+        .hero {
+            max-width: 400px;
+            width: 400px;
+        }
+    }
 }

@@ -11,7 +11,7 @@ import githubDark from "../../assets/github-dark.svg";
 import linkedinLight from "../../assets/linkedin-light.svg";
 import linkedinDark from "../../assets/linkedin-dark.svg";
 
-import CV from "../../assets/cv.pdf";
+import CV from "../../assets/Selin-Kocaer-Resume.pdf";
 import { useTheme } from "../../common/ThemeContext";
 
 function Hero() {
@@ -20,6 +20,21 @@ function Hero() {
     const twitterIcon = theme === "light" ? twitterLight : twitterDark;
     const githubIcon = theme === "light" ? githubLight : githubDark;
     const LinkedinIcon = theme === "light" ? linkedinLight : linkedinDark;
+
+    const handleDownload = () => {
+        const link = document.createElement("a");
+        link.href = CV;
+        link.download = "selin-kocaer-resume.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
+    <a href={CV} target="_blank" rel="noopener noreferrer">
+        <button className="hover" onClick={handleDownload}>
+            Resume
+        </button>
+    </a>;
 
     return (
         <section id="hero" className={styles.container}>
@@ -33,14 +48,14 @@ function Hero() {
                 </h1>
                 <h2> Frontend Developer </h2>
                 <span>
-                    <a href="https://twitter.com" target="_blank">
-                        <img src={twitterIcon} alt="Twitter icon" />
-                    </a>
-                    <a href="https://github.com/selinkocaer" target="_blank">
+                    <a href="https://github.com/selinkocaer" target="_blank" rel="noopener noreferrer">
                         <img src={githubIcon} alt="Github icon" />
                     </a>
                     <a href="https://www.linkedin.com/in/selin-kocaer/" target="_blank">
                         <img src={LinkedinIcon} alt="Linkedin icon" />
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src={twitterIcon} alt="Twitter icon" />
                     </a>
                 </span>
                 <p className={styles.description}> With experience in both frontend and backend development, I focus on creating efficient, scalable, and user-friendly applications.</p>

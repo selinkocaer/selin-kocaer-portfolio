@@ -11,11 +11,11 @@ function Project() {
         <section id="projects" className={styles.container}>
             <h1 className="sectionTitle">Projects</h1>
             <div className={styles.projectContainer}>
-                <ProjectCard src={chatbot} link="https://github.com/selinkocaer/chatbott-project" h3="Chatbot" p="Smart Chatbot" />
-                <ProjectCard src={task} link="https://github.com/selinkocaer/task-management-system" h3="Task" p="Task Management System" />
-                <ProjectCard src={userhub} link="https://github.com/selinkocaer/UserHub" h3="UserHub" p="A Simple User Action System" />
-                <ProjectCard src={note} link="https://github.com/selinkocaer/NotYonetimi" h3="Notes" p="Note Management System" />
-                <ProjectCard src={register} link="https://github.com/selinkocaer/user-registration-system" h3="User Registration" p="User Registration System" />
+                <ProjectCard src={chatbot} link="https://github.com/selinkocaer/chatbott-project" />
+                <ProjectCard src={task} link="https://github.com/selinkocaer/task-management-system" />
+                <ProjectCard src={userhub} link="https://github.com/selinkocaer/UserHub" />
+                <ProjectCard src={note} link="https://github.com/selinkocaer/NotYonetimi" />
+                <ProjectCard src={register} link="https://github.com/selinkocaer/user-registration-system" />
             </div>
         </section>
     );

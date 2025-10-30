@@ -46,7 +46,7 @@ function Hero() {
                 <h1>
                     Selin <br /> KOCAER
                 </h1>
-                <h2> Frontend Developer </h2>
+                <h2> Frontend | Full Stack Developer </h2>
                 <span>
                     <a href="https://github.com/selinkocaer" target="_blank" rel="noopener noreferrer">
                         <img src={githubIcon} alt="Github icon" />
@@ -58,7 +58,7 @@ function Hero() {
                         <img src={twitterIcon} alt="Twitter icon" />
                     </a>
                 </span>
-                <p className={styles.description}> With experience in both frontend and backend development, I focus on creating efficient, scalable, and user-friendly applications.</p>
+                <p className={styles.description}>I’m a full-stack developer passionate about building efficient, scalable, and user-focused applications. I combine frontend technologies like React and DevExtreme with backend tools such as Node.js and PostgreSQL to create reliable and seamless digital experiences.</p>
                 <a href={CV}>
                     <button className="hover" download>
                         Resume

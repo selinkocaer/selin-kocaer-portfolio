@@ -11,7 +11,7 @@ import githubDark from "../../assets/github-dark.svg";
 import linkedinLight from "../../assets/linkedin-light.svg";
 import linkedinDark from "../../assets/linkedin-dark.svg";
 
-import CV from "../../assets/Selin-Kocaer-Resume.pdf";
+import CV from "../../assets/Selin_Kocaer_Resume.pdf";
 import { useTheme } from "../../common/ThemeContext";
 
 function Hero() {

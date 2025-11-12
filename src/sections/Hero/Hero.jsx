@@ -11,7 +11,7 @@ import githubDark from "../../assets/github-dark.svg";
 import linkedinLight from "../../assets/linkedin-light.svg";
 import linkedinDark from "../../assets/linkedin-dark.svg";
 
-import CV from "../../assets/Selin_Kocaer_Resume.pdf";
+import CV from "../../assets/Selin-Kocaer-Resume.pdf";
 import { useTheme } from "../../common/ThemeContext";
 
 function Hero() {
@@ -24,7 +24,7 @@ function Hero() {
     const handleDownload = () => {
         const link = document.createElement("a");
         link.href = CV;
-        link.download = "selin-kocaer-resume.pdf";
+        link.download = "Selin-Kocaer-Resume.pdf";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
